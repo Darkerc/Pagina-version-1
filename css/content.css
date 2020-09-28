@@ -1,0 +1,115 @@
+.content{
+    --user-size: 85%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 50px;
+    min-width: var(--user-size);
+    min-height: var(--user-size);
+    max-width: var(--user-size);
+    max-height: var(--user-size);
+    display: flex;
+}
+
+.content__img__container{
+    width: 45%;
+    position: relative;
+}
+
+.content__img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+}
+
+.fadeIn{
+  transform: translateX(50px);
+  opacity: 0%;
+}
+
+.animationFadeIn{
+  opacity: 100%;
+  transform: translateX(0);
+}
+
+
+.content__info{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content__name{
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 50px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+.content__description{
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 100;
+}
+
+table {
+  border-spacing: 0px;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 15px;
+  background-color: transparent; 
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+  border: 1px solid #cccccc; 
+  padding: 8px;
+}
+
+td {
+  border: 1px solid #cccccc; 
+  padding: 8px;
+}
+
+tr {
+  background-color: transparent; 
+}
+
+tr:nth-of-type(2n+1) {
+  background-color: #eeeeee; 
+}
+
+tr th {
+  background-color: #dddddd; 
+}
+
+tr {
+  -moz-transition: background-color 300ms ease-in-out 0s;
+  -ms-transition: background-color 300ms ease-in-out 0s;
+  -o-transition: background-color 300ms ease-in-out 0s;
+  -webkit-transition: background-color 300ms ease-in-out 0s;
+  transition: background-color 300ms ease-in-out 0s;
+}
+
+tr:hover {
+  background-color: #fff176; 
+}
+  
+tr {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+th, td {
+  border: none;
+}
