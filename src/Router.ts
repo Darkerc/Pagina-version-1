@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import Index from "./pages/Index";
+import Index from "./pages/Index.vue";
 import Portafolio from "./pages/Portafolio.vue";
 import RedesSociales from "./pages/Redes-sociales.vue";
 import Contactanos from "./pages/Contactanos.vue";
