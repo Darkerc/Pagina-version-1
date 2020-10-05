@@ -21,3 +21,11 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+#webassembly files
+src/wasm/target/
+src/wasm/**/*.rs.bk
+src/wasm/Cargo.lock
+src/wasm/bin/
+src/wasm/pkg/
+src/wasm/wasm-pack.log

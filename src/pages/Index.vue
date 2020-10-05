@@ -1,10 +1,10 @@
 <template lang="pug">
 .panel.panel--black
-    header:nav:ul.list.list--row
-                li:router-link.list__item(:to="{ name:'Portafolio' }") Portafolio
-                li:router-link.list__item(:to="{ name:'Acerca-de-mi' }") Acerca de mi
-                li:router-link.list__item(:to="{ name:'Contactanos' }") Contactanos
-                li:router-link.list__item(:to="{ name:'Redes-sociales' }") Redes sociales
+    header: nav: ul.list.list--row
+        li: router-link.list__item(:to="{ name:'Portafolio' }") Portafolio
+        li: router-link.list__item(:to="{ name:'Acerca-de-mi' }") Acerca de mi
+        li: router-link.list__item(:to="{ name:'Contactanos' }") Contactanos
+        li: router-link.list__item(:to="{ name:'Redes-sociales' }") Redes sociales
     .content
         .content__img__container
             img.content__img(src="@/assets/images/eder-portfolio.png")
@@ -22,7 +22,7 @@
                 |nisi! Nihil vitae dolorum, beatae odio iste quae impedit aliquam
                 |adipisci.
         .content__img__container
-            img.content__img.fadeIn(src="@/assets/images/portfolio.png" id="portfolioImg")
+            img.content__img.fadeIn(src="@/assets/svg/frameworkscarpeta.svg" id="portfolioImg")
 .panel.panel--secondary
     .content
         .content__img__container
@@ -51,7 +51,10 @@
 import { onMounted } from "vue"
 import scrollAnimation from '@/utils/scrollAnimation'
 
-onMounted(() => {
+onMounted( async () => {
     scrollAnimation(['portfolioImg', 'contactoImg', 'aboutImg'])
+    const wasm = import("@/wasm/pkg");
+    const greet = (await wasm).greet;
+    greet();
 })
 </script>

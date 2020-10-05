@@ -1,0 +1,74 @@
+.content
+    user-size = 85%
+    margin auto
+    box-sizing border-box
+    padding 50px
+    min-width user-size
+    min-height user-size
+    max-width user-size
+    max-height user-size
+    display flex
+
+    .content__info
+        width 55%
+        display flex
+        flex-direction column
+        justify-content space-evenly
+        box-sizing border-box
+        padding 15px
+
+        .content__name
+            box-sizing border-box
+            padding 15px
+            font-size var(--primary-font-size)
+            color white
+            font-family Verdana, Geneva, Tahoma, sans-serif
+            text-align center
+            font-weight 900
+
+
+        .content__description
+            box-sizing border-box
+            padding 5px
+            font-size var(--secondary-font-size)
+            color white
+            font-family Verdana, Geneva, Tahoma, sans-serif
+            text-align center
+            font-weight 100
+            text-align justify
+
+    .content__img__container
+        width 50%
+        position relative
+    
+        .content__img
+            width 100%
+            height 100%
+            transition all 500ms ease-in-out
+    
+    .content_footer
+        display flex
+        justify-content space-around
+        margin 20px 0
+
+        .content_f_item
+            color white
+            box-sizing border-box
+            padding 10px
+            border-radius 10px
+            font-size var(--secondary-font-size)
+            display inline
+            background-color var(--secondary-color)
+
+.fadeIn
+  transform translateX(50px)
+  opacity 0%
+
+
+.animationFadeIn
+  opacity 100%
+  transform translateX(0)
+
+
+
+
